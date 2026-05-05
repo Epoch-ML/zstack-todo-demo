@@ -7,8 +7,9 @@ type Todo = {
 
 const todos = ref<Todo[]>([
   { id: 1, title: 'Wire repo to ZStack', done: true },
-  { id: 2, title: 'Provision a Fly deployment', done: false },
-  { id: 3, title: 'Trigger deploys from GitHub pushes', done: false }
+  { id: 2, title: 'Provision a Fly deployment', done: true },
+  { id: 3, title: 'Trigger deploys from GitHub pushes', done: true },
+  { id: 4, title: 'Watch live deploy logs in ZStack', done: false }
 ])
 const draft = ref('')
 
@@ -32,7 +33,7 @@ function removeTodo(id: number): void {
       <header class="header">
         <div>
           <p class="eyebrow">ZStack demo workspace</p>
-          <h1>Todo</h1>
+          <h1>Todo Live</h1>
         </div>
         <div class="counter">{{ openCount }} open</div>
       </header>
