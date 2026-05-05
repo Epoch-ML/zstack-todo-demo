@@ -9,7 +9,8 @@ const todos = ref<Todo[]>([
   { id: 1, title: 'Wire repo to ZStack', done: true },
   { id: 2, title: 'Provision a Fly deployment', done: true },
   { id: 3, title: 'Trigger deploys from GitHub pushes', done: true },
-  { id: 4, title: 'Watch live deploy logs in ZStack', done: false }
+  { id: 4, title: 'Watch live deploy logs in ZStack', done: true },
+  { id: 5, title: 'Ship from a GitHub webhook', done: false }
 ])
 const draft = ref('')
 
